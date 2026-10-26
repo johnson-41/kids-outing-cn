@@ -1,0 +1,103 @@
+{
+ "_note": "城市资料层。换城市只换这一份，不改 core、young、teen 与 assets。字段照填，查不到的写 null 并在 notes 里说明。",
+ "city": null,
+ "country": "CN",
+ "updated_at": null,
+ "info_baseline_date": null,
+ "valid_days": 90,
+ "timezone": null,
+ "weather": {
+  "primary_source": null,
+  "url": null,
+  "fallback": null,
+  "notes": null
+ },
+ "transit": {
+  "metro_available": null,
+  "metro_hours": null,
+  "shared_bike_rules": null,
+  "car_restriction": {
+   "plate_local": null,
+   "plate_nonlocal": null,
+   "weekend_special": null,
+   "source": null
+  },
+  "notes": null
+ },
+ "venues": [
+  {
+   "name": null,
+   "type": "V|S|A|P|O|C|Z|E|W|X|Y",
+   "district": null,
+   "address": null,
+   "entrance": null,
+   "parking": null,
+   "closed_days": null,
+   "ticket": null,
+   "booking": null,
+   "guide_sessions": null,
+   "age_or_height": null,
+   "reentry_allowed": null,
+   "source": null,
+   "checked_at": null,
+   "expires_on": null
+  }
+ ],
+ "areas": [
+  {
+   "name": null,
+   "kind": "park|trail|coast|district",
+   "shade": null,
+   "toilet": null,
+   "water": null,
+   "surface": null,
+   "exit_points": null,
+   "notes": null
+  }
+ ],
+ "phenology": [
+  {
+   "month": null,
+   "subject": null,
+   "place": null,
+   "confidence": null,
+   "source": null
+  }
+ ],
+ "known_traps": [
+  {
+   "topic": null,
+   "what_goes_wrong": null,
+   "how_to_avoid": null,
+   "source": null
+  }
+ ],
+ "notes": null,
+ "activity_sources": {
+  "_note": "只存渠道，不存活动。活动每次临查，见 core/sources.md。",
+  "venue_channels": [
+   {
+    "venue": null,
+    "type": null,
+    "official_channel": null,
+    "booking": null,
+    "check_freq": "每次规划"
+   }
+  ],
+  "local_official": [
+   {
+    "name": null,
+    "channel": null,
+    "covers": null
+   }
+  ],
+  "aggregator_hint": [
+   {
+    "name": null,
+    "use_for": "发现线索",
+    "never_use_for": "期限与票价"
+   }
+  ]
+ },
+ "_schema_note": "全国通用。换城市复制本文件为 <city>.md 或 <city>.json，填 city 与 channels 即可。"
+}

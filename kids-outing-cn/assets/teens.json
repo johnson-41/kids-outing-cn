@@ -1,0 +1,104 @@
+{
+ "_note": "12–18 岁使用。深底霓虹＋信息图风格：等宽字、网格、细线描边、发光点缀。只读值，不改文件。",
+ "age_band": "teen",
+ "design_style": "deep_neon_datagrid",
+ "main_activity_max_min": 150,
+ "sentence_max_chars": 24,
+ "questions_per_place": 3,
+ "question_style": "causal_and_stance",
+ "value_anchor": {
+  "must_give": [
+   "一个议题",
+   "一次决定权"
+  ],
+  "optional": [
+   "延伸资料方向"
+  ],
+  "forbidden": [
+   "任务清单",
+   "完成度评价",
+   "说教式反问"
+  ]
+ },
+ "decision_authority": {
+  "pick_one": [
+   "budget",
+   "route_order"
+  ],
+  "never": [
+   "你想去哪（全开放）",
+   "要不要去（投票式）"
+  ]
+ },
+ "prep_before_min": 30,
+ "follow_up_min": 45,
+ "display_sections": [
+  "出发",
+  "停点数",
+  "午饭预算",
+  "回家"
+ ],
+ "palette": {
+  "bg": "#0B0F14",
+  "panel": "#11171F",
+  "panel2": "#161E28",
+  "grid": "rgba(120,220,255,0.08)",
+  "ink": "#E8F1F8",
+  "dim": "#7C8E9E",
+  "neon": "#38E8D0",
+  "neon2": "#FF4D8D",
+  "amber": "#FFC24B",
+  "line": "rgba(56,232,208,0.35)"
+ },
+ "type": {
+  "display": "等宽或几何无衬线，字号 32–40，字距略松",
+  "body": "14px，行高 1.8",
+  "mono_for": [
+   "时间",
+   "金额",
+   "距离",
+   "停点数",
+   "坐标"
+  ]
+ },
+ "shape": {
+  "radius": "2–6px，锐角为主",
+  "border": "1px 细线，局部发光",
+  "texture": "网格底纹、扫描线可少量使用",
+  "stickers": "禁止卡通贴纸"
+ },
+ "motion": {
+  "enabled": true,
+  "items": [
+   "路线描边跑一次",
+   "数字计数上涨",
+   "模块进入淡入"
+  ],
+  "loop": false,
+  "duration_ms": 600,
+  "respect_reduced_motion": true
+ },
+ "illustration": {
+  "allowed": false,
+  "replace_with": "矢量路线图、条形信息图、细线图解"
+ },
+ "sub_stage": {
+  "12_14": "议题落地，别太抽象。开始在意同伴看法。",
+  "15_16": "能做价值判断，会质疑安排本身。给选择权比给答案有用。",
+  "17_18": "更接近一起计划，而非带你出去玩。明确不喜欢被安排。"
+ },
+ "review_card": {
+  "frame": "1080x1350",
+  "tone": "像一张夜跑记录或情报卡",
+  "decor": [
+   "发光路线",
+   "坐标水印",
+   "等宽标签"
+  ]
+ },
+ "visual_style": {
+  "source": "assets/styles.json",
+  "default": "neon",
+  "note": "客户可另选 cartoon / neon / line，见 SKILL.md 风格一节。"
+ }
+}

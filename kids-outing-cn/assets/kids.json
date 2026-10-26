@@ -1,0 +1,99 @@
+{
+ "_note": "12 岁以下使用。卡通绘本风：手绘描边、贴纸感、高饱和。只读值，不改文件。",
+ "age_band": "under12",
+ "design_style": "cartoon_storybook",
+ "main_activity_max_min": 90,
+ "sentence_max_chars": 18,
+ "questions_per_place": 2,
+ "question_style": "concrete",
+ "value_anchor": {
+  "must_give": [
+   "一件要找的实物",
+   "一个能聊的问题"
+  ],
+  "optional": [
+   "行前背景钩子",
+   "回家延伸"
+  ]
+ },
+ "prep_before_min": 20,
+ "follow_up_min": 30,
+ "display_sections": [
+  "出门",
+  "先做什么",
+  "吃什么",
+  "到家"
+ ],
+ "palette": {
+  "paper": "#FFF8E7",
+  "paper2": "#FFECC9",
+  "ink": "#2B2118",
+  "line": "#2B2118",
+  "sun": "#FFC53D",
+  "sky": "#5BC8E8",
+  "grass": "#7BC86C",
+  "coral": "#FF7A59",
+  "grape": "#9B7EDE",
+  "shadow": "rgba(43,33,24,0.18)"
+ },
+ "type": {
+  "display": "手写圆体或粗圆黑，字号 30–40",
+  "body": "圆体黑，14.5px，行高 1.75",
+  "mono_for": [
+   "时间",
+   "金额",
+   "距离"
+  ]
+ },
+ "shape": {
+  "radius": "18–28px，胶囊按钮",
+  "border": "3px 实线深色描边，带 4px 偏移硬阴影",
+  "texture": "纸纹或噪点，可选",
+  "stickers": "允许贴纸、胶带、票根齿孔等装饰"
+ },
+ "motion": {
+  "enabled": true,
+  "items": [
+   "贴纸入场弹一下",
+   "时间轴色点依次亮",
+   "折叠展开"
+  ],
+  "loop": false,
+  "spring": "0.3s cubic-bezier(.34,1.56,.64,1)",
+  "respect_reduced_motion": true
+ },
+ "illustration": {
+  "allowed": true,
+  "style": "单线手绘＋平涂，可画动物与物品，不画真人脸",
+  "max_px": 120
+ },
+ "preschool": {
+  "_note": "4–6 岁使用本文件，取这一段的值。",
+  "main_activity_max_min": 75,
+  "sentence_max_chars": 14,
+  "questions_per_place": 1,
+  "question_style": "sensory_and_motion",
+  "prep_before_min": 10,
+  "follow_up_min": 20,
+  "require_run_or_hands_on": true
+ },
+ "under4": {
+  "_note": "4 岁以下不出完整方案。",
+  "full_plan": false,
+  "max_outing_hours": 3.5
+ },
+ "review_card": {
+  "frame": "1080x1350",
+  "tone": "像一张手绘相册页",
+  "decor": [
+   "胶带",
+   "票根齿孔",
+   "手写标题"
+  ]
+ },
+ "visual_style": {
+  "source": "assets/styles.json",
+  "default": "cartoon",
+  "note": "客户可另选 cartoon / neon / line，见 SKILL.md 风格一节。"
+ }
+}

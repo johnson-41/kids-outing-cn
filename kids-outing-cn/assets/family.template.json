@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "updated_at": null,
+  "check_last_passed_at": null,
+  "check_result": null,
+  "data_dir": null,
+  "timezone": "Asia/Shanghai",
+  "age_band": null,
+  "origin": {
+    "city": null,
+    "district": null,
+    "landmark": null
+  },
+  "adults": {
+    "count": null,
+    "who": [],
+    "can_drive": null
+  },
+  "children": [
+    {
+      "nickname": null,
+      "age_years": null,
+      "birth_year": null,
+      "height_cm": null,
+      "notes": null
+    }
+  ],
+  "transport": {
+    "primary": null,
+    "has_car": null,
+    "parking_ok": null,
+    "max_one_way_minutes": null
+  },
+  "budget": {
+    "amount": null,
+    "currency": "CNY",
+    "scope": "per_trip",
+    "source": null
+  },
+  "interests": [],
+  "avoid": [],
+  "meal_needs": {
+    "diet": [],
+    "spicy_ok": null,
+    "chain_allowed": null,
+    "per_person": null
+  },
+  "activity_limits": {
+    "mobility": null,
+    "height_or_age_notes": [],
+    "sensory": null
+  },
+  "preferences": {
+    "output_mode": "html",
+    "human_guide_required": null,
+    "screen_policy": null,
+    "nap_required": null,
+    "notes": []
+  },
+  "value_layer": {
+    "mode": "light",
+    "prefers": null,
+    "notes": null
+  },
+  "schedule": {
+    "week_definition": "monday_to_sunday",
+    "confirmed_windows": [],
+    "recurring_busy": [],
+    "date_exceptions": [],
+    "valid_until": null
+  },
+  "history": {
+    "last_plan_id": null,
+    "last_plan_date": null,
+    "last_review_at": null
+  }
+}

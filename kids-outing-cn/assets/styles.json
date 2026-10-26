@@ -1,0 +1,113 @@
+{
+  "_note": "视觉风格独立于年龄。两套风格都可以配到任一年龄档，最终由客户诉求决定。默认值见 each style 的 default_for。",
+  "selection_rule": "先问客户要什么感觉，再定风格；客户没意见时，按年龄取 default_for。风格一旦选定，整份方案与复盘出图保持一致，不中途换。",
+  "styles": {
+    "cartoon": {
+      "label": "卡通绘本",
+      "default_for": "under12",
+      "feel": "像一本孩子想翻开的绘本，纸感、贴纸、手绘",
+      "palette": {
+        "paper": "#FFF8E7",
+        "paper2": "#FFECC9",
+        "ink": "#241B13",
+        "line": "#241B13",
+        "sun": "#FFC53D",
+        "sky": "#5BC8E8",
+        "grass": "#7BC86C",
+        "coral": "#FF7A59",
+        "grape": "#9B7EDE",
+        "tape": "#FFE9A8",
+        "shadow": "rgba(36,27,19,0.22)"
+      },
+      "shape": {
+        "radius": "16–28px，按钮胶囊",
+        "border": "3–4px 实线深色描边",
+        "shadow": "4–6px 偏移硬阴影，不用模糊",
+        "decor": "胶带、齿孔、贴纸，每屏最多一处"
+      },
+      "type": {
+        "display": "粗圆黑，字号按内容定，最多两行",
+        "body": "圆体黑，行高 1.72–1.8",
+        "mono_for": ["时间", "金额", "距离"]
+      },
+      "motion": {
+        "items": ["贴纸入场弹性 0.3s", "时间轴色点依次点亮 80ms", "折叠展开 180ms"],
+        "loop": false,
+        "spring": "cubic-bezier(.34,1.56,.64,1)"
+      },
+      "illustration": {
+        "allowed": true,
+        "style": "SVG 几何或单线手绘，可画动物与物品，不画真人脸",
+        "max_px": 120
+      }
+    },
+    "neon": {
+      "label": "深底信息图",
+      "default_for": "teen",
+      "feel": "像一份夜间外勤记录，深底、细线、霓虹点缀",
+      "palette": {
+        "bg": "#0B0F14",
+        "panel": "#11171F",
+        "ink": "#E8F1F8",
+        "dim": "#7C8E9E",
+        "faint": "#4A5A68",
+        "neon": "#38E8D0",
+        "pink": "#FF4D8D",
+        "amber": "#FFC24B",
+        "line": "rgba(56,232,208,0.28)"
+      },
+      "shape": {
+        "radius": "2–6px，锐角为主",
+        "border": "1px 细线，局部发光",
+        "shadow": "不用阴影，用发光描边",
+        "decor": "细网格、四角刻度、坐标水印，极淡"
+      },
+      "type": {
+        "display": "等宽或几何无衬线，字距略松",
+        "body": "行高 1.8",
+        "mono_for": ["时间", "金额", "距离", "停点数", "坐标"]
+      },
+      "motion": {
+        "items": ["路线描边一次 600ms", "关键数字计数 400ms", "模块淡入 200ms"],
+        "loop": false
+      },
+      "illustration": {
+        "allowed": false,
+        "replace_with": "矢量路线图、条形信息图、细线图解"
+      }
+    },
+    "line": {
+      "label": "线稿",
+      "default_for": "under12",
+      "feel": "白底黑线的插画风，像一本速写本",
+      "palette": {
+        "paper": "#FCFCFA",
+        "ink": "#1A1A1A",
+        "line": "#1A1A1A",
+        "accent": "#2F6B5A",
+        "accent2": "#C2703A",
+        "dim": "#6B6B6B"
+      },
+      "shape": {
+        "radius": "0–8px，方形为主",
+        "border": "1.5–2px 实线",
+        "shadow": "无阴影，靠线宽分层",
+        "decor": "手绘线条、斜线填充、编号圆圈"
+      },
+      "type": {
+        "display": "无衬线或手写感字体，字号克制",
+        "body": "行高 1.85",
+        "mono_for": ["时间", "距离"]
+      },
+      "motion": {
+        "items": ["线条自绘 700ms", "模块淡入 200ms"],
+        "loop": false
+      },
+      "illustration": {
+        "allowed": true,
+        "style": "纯线稿，只描边不填色，可用斜线做暗部",
+        "max_px": 140
+      }
+    }
+  }
+}
